@@ -13,6 +13,11 @@ function showResult () {
         obtained.innerHTML = 'Nil'
         percent.innerHTML = 'Nil'
         yourGrade.innerHTML = 'Nil'
+    } else if (+engMarks.value < 0 || +mathMarks.value < 0 || +islMarks.value < 0 || +urduMarks.value < 0) {
+        alert ('Entered Marks should be greater than 0')
+        obtained.innerHTML = 'Nil'
+        percent.innerHTML = 'Nil'
+        yourGrade.innerHTML = 'Nil'
     } else {
         var obtainedMarks = (+engMarks.value) + (+mathMarks.value) + (+islMarks.value) + (+urduMarks.value)
         var percentage = (obtainedMarks/totalMarks) * 100
